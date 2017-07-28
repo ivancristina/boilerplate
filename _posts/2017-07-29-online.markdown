@@ -1,0 +1,28 @@
+---
+layout:     post
+title:      "Online!"
+subtitle:   "New site now online"
+date:       2017-07-29
+author:     "You"
+header-img: "img/post-bg-online.jpg"
+tags:
+    - Blog
+    - Hello
+    - Tag
+---
+
+> "Your poetic phrase."
+> *- Me, modestly*
+
+
+## Well. You did it
+
+Wow, You did it. Was it that hard?
+Huge thanks to <a href="https://github.com/Huxpro">Hux</a> for his incredibly well-made base. Without him I'd probably still trying to mess with html syntax.
+Have fun now.
+
+---
+
+# Content
+
+Your content here.

@@ -1,0 +1,66 @@
+---
+layout: page
+title: "About"
+description: "Hey, this is you."
+header-img: "img/about-bg.jpg"
+---
+
+<!-- Language Selector -->
+<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> Your language </option>
+    <option value="1"> English </option>
+</select>
+
+<!-- Your Language Version -->
+<div class="yl post-container">	<!-- Replace "yl" with your country code here and below, not necessary though. -->
+    <blockquote><p>Something, (In your language)<br>
+     Something else. (Still in your language)</p></blockquote>
+
+    <p>Hey, I'm <strong>your name here</strong>, a lot of nice things here.</p>
+
+    <p>Visit my <a href="http://github.com/">Github</a>. (Maybe replace the Git's site with yours)</p>
+    
+    <p>All of this in your language. Still.</p>
+    <h5>List</h5>
+
+    <ul>
+	<li><a href="https://wwww.google.com">Google</a> · Your</li>
+    <li><a href="https://www.xda-developers.com">XDA</a> · Stuff</li>
+	<li><a href="https://twitter.com/">Twitter</a> · Here</li>
+    </ul>
+</div>
+
+<!-- English Version -->
+<div class="en post-container">
+    <blockquote><p>Something,<br>
+     Something else.</p></blockquote>
+
+    <p>Hey, I'm <strong>your name here</strong>, a lot of nice things here.</p>
+
+    <p>Visit my <a href="http://github.com/">Github</a>. (Maybe replace the Git's site with yours)</p>
+    
+    <p>All of this in english. At least this time.</p>
+    <h5>List</h5>
+
+    <ul>
+	<li><a href="https://wwww.google.com">Google</a> · Your</li>
+    <li><a href="https://www.xda-developers.com">XDA</a> · Stuff</li>
+	<li><a href="https://twitter.com/">Twitter</a> · Here</li>
+    </ul>
+</div>
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    var $it = document.querySelector(".yl");	// Replace "yl" with your country code here and up, not necessary though.
+    var $en = document.querySelector(".en");
+    function onLanChange(index){
+        if(index == 0){
+            $it.style.display = "block";
+            $en.style.display = "none";
+        }else{
+            $en.style.display = "block";
+            $it.style.display = "none";
+        }
+    }
+    onLanChange(0);
+</script>

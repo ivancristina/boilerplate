@@ -1,0 +1,94 @@
+# Site settings
+title: Your Git
+SEOTitle: Your | Git
+header-img: img/home-bg.jpg
+email: youremail@gmail.com
+description: ""
+keyword: ""
+url: "https://yoururl.github.io/" # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+
+
+# SNS settings
+RSS: false
+github_username:    yourshere
+twitter_username:   yourshere
+instagram_username: yourshere
+telegram_username:  yourshere
+xda_username:       yourshere
+xda_member_id:      yourshere
+#facebook_username: yourshere
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jemoji
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+disqus_username: yourshere
+
+
+# Analytics settings
+# Google Analytics
+ga_track_id: 'UA-yourshere-!'            # Format: UA-xxxxxx-xx
+ga_domain: yourshere.github.io
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Your beautiful description"
+sidebar-avatar: /img/avatar.jpg    # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Friends
+friends: [
+    {
+        title: "Me",
+        href: "https://github.com/yourgit"
+    },{
+        title: "Your friend",
+        href: "https://github.com/yourfriend"
+    },{
+        title: "Well, whatever you want",
+        href: "#"
+    }
+]
+
+
+#Markdown
+encoding: utf-8
